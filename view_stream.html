@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSMpeg Stream Client</title>
+  <style>
+    html, body {
+      background-color: #111;
+      text-align: center;
+    }
+  </style>
+
+</head>
+<body>
+<canvas id="video-canvas"></canvas>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsmpeg/0.2/jsmpg.min.js"></script>
+<script type="text/javascript">
+  var canvas = document.getElementById('video-canvas');
+  var url = 'ws://localhost:8080/stream';
+  var player = new JSMpeg.Player(url, {
+    canvas: canvas
+  });
+</script>
+</body>
+</html>

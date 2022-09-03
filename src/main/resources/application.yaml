@@ -1,0 +1,4 @@
+server:
+  shutdown: graceful
+
+ffmpeg-command: C:\Users\egliehar\Desktop\ffmpeg-master-latest-win64-gpl\bin\ffmpeg.exe
