@@ -17,7 +17,8 @@
   var canvas = document.getElementById('video-canvas');
   var url = 'ws://localhost:8080/stream';
   var player = new JSMpeg.Player(url, {
-    canvas: canvas
+    canvas: canvas,
+    protocols: "mpeg-ts"
   });
 </script>
 </body>
